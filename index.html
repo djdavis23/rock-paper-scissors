@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Don's Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ROCK-PAPER-SCISSORS</h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row cards">
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/rock.jpg" width="280px" height="200px" alt="Rock Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Rock</h5>
+                        <p class="card-text">Rock beats scissors but loses to paper.</p>
+                        <a href="#" class="btn btn-primary" onclick="play('rock')">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/paper.jpg" width="280px" height="200px" alt="Papaer image">
+                    <div class="card-body">
+                        <h5 class="card-title">Paper</h5>
+                        <p class="card-text">Paper beats rock but loses to scissors.</p>
+                        <a href="#" class="btn btn-primary" onclick="play('paper')">Play</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/scissors.jpg" width="280px" height="200px" alt="Scissors Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Scissors</h5>
+                        <p class="card-text">Scissors beats paper but loses to Rock.</p>
+                        <a href="#" class="btn btn-primary" onclick="play('scissors')">Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center" id="game-output">
+
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="assets/app.js"></script>
+</body>
+
+</html>

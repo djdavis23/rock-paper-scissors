@@ -1,0 +1,15 @@
+.cards {
+    background-color: rgb(46, 49, 53);
+}
+header {
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    font-size: 6em;
+}
+#game-output {
+    height: 200px;
+    background: lightslategray
+}
